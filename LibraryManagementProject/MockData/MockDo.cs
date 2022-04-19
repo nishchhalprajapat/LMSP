@@ -12,7 +12,9 @@ namespace LibraryManagementProject.MockData
         public List<BookResponseDo> getMockData()
         {
             List<BookResponseDo> bookList = new List<BookResponseDo>();
-            bookList.Add(new BookResponseDo());
+            //bookList.Add(new BookResponseDo(101,"The great gatsBy","henry",05/04/2022,));
+
+            return bookList;
         }
     }
 }

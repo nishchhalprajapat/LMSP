@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementProject.LibraryMs.Interfaces
 {
-    public interface IMyBookRentalInterface
+    public interface IMyBookRentInterface
     {
 
     }
