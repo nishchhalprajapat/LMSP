@@ -22,8 +22,10 @@
                     <RowDefinition Height="113*"/>
                     <RowDefinition Height="127*"/>
                 </Grid.RowDefinitions>
-                <TextBlock HorizontalAlignment="Left" Margin="31,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="UserName" VerticalAlignment="Center" FontSize="22" FontWeight="Bold" Width="187" Height="29"/>
-                <TextBox HorizontalAlignment="Left" Margin="31,0,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="314" Height="38" RenderTransformOrigin="0.5,0.5">
+                <TextBlock HorizontalAlignment="Left" Margin="31,6,0,0" Grid.Row="1" TextWrapping="Wrap" Text="UserName" VerticalAlignment="Center" FontSize="22" FontWeight="Bold" Width="187" Height="29"/>
+                
+                <TextBox HorizontalAlignment="Left" Margin="31,6,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="314" Height="38" RenderTransformOrigin="0.5,0.5" TextChanged="TextBox_TextChanged_1" >
+                    
                     <TextBox.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform ScaleY="-1"/>
@@ -33,10 +35,10 @@
                         </TransformGroup>
                     </TextBox.RenderTransform>
                 </TextBox>
-                <TextBlock HorizontalAlignment="Left"  Margin="31,6,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" FontSize="22" FontWeight="Bold" Width="338" Height="29"/>
-                <TextBox HorizontalAlignment="Left" Margin="31,6,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" Height="38" TextChanged="TextBox_TextChanged"/>
-                <Button Content="SIGN IN" HorizontalAlignment="Left" Margin="31,31,0,0" Grid.Row="5" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Width="314" Height="38" Background="OrangeRed" Click="Button_Click"/>
-                <TextBlock HorizontalAlignment="Center" Margin="0,6,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="29" Width="338"><Run Text="    "/><Run Text="Don't "/><Run Language="en-in" Text="h"/><Run Text="ave an account? create"/></TextBlock>
+                <TextBlock HorizontalAlignment="Left"  Margin="31,6,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" FontSize="22" FontWeight="Bold" Width="338" Height="38"/>
+                <TextBox HorizontalAlignment="Left" Margin="31,6,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Height="38" TextChanged="TextBox_TextChanged"/>
+                <Button Content="SIGN IN" HorizontalAlignment="Left" Margin="38,10,0,0" Grid.Row="5" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Width="314" Height="38" Background="OrangeRed" Click="Button_Click"/>
+                <TextBlock  HorizontalAlignment="Center"  Margin="-30,6,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="29" Width="338"><Run Text="    "/><Run Text="Don't "/><Run Language="en-in" Text="h"/><Run Text="ave an account? create"/></TextBlock>
             </Grid>
             <Image HorizontalAlignment="Left" Height="100" Margin="152,244,0,0" VerticalAlignment="Top" Width="100"/>
             <Grid>
@@ -44,7 +46,7 @@
                     <RowDefinition/>
                     <RowDefinition Height="5*"/>
                 </Grid.RowDefinitions>
-                <Image HorizontalAlignment="Center"  Name="MyImg" Height="483" 
+                <Image HorizontalAlignment="Stretch"  Name="MyImg" Height="483" 
     VerticalAlignment="Top" Width="380" Source="/BookImage.png" Margin="0,103,0,0" Grid.RowSpan="2"/>
 
                 <TextBlock Margin="10,10,23,37" TextWrapping="Wrap" Text="BookLibrary" Foreground="#FF39999C" FontSize="36" FontFamily="Mistral"/>
