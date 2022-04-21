@@ -24,15 +24,28 @@ namespace LibraryManagementProject
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+       
+        private void go_to_singUp_Page(object sender, RoutedEventArgs e)
         {
+            SignUp signUp = new SignUp();
+            signUp.Show();
+            this.Close();
+        }
+        private void go_to_home_page(object sender, RoutedEventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            homePage.Show();
+            this.Close();
 
         }
+        //private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        //{
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
+        //}
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
 
-        }
+        //}
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
