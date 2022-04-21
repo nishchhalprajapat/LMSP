@@ -9,7 +9,7 @@ namespace LibraryManagementProject.LibraryMs.Interfaces
 {
     public interface IBookRentInterface
     {
-        List<BookResponseDo> createBookRentDetails(BookRentRequestDo obj);
+        bool createBookRentDetails(BookRentRequestDo obj);
 
     }
 }
