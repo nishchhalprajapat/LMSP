@@ -9,7 +9,7 @@ namespace LibraryManagementProject.LibraryMs.Interfaces
 {
     public interface IUserInterface
     {
-        public UserResponseDo signInUser(LoginRequestDo obj);
-        public UserResponseDo signUpUser(UserRequestDo obj);
+        public Boolean signInUser(LoginRequestDo obj);
+        public Boolean signUpUser(UserRequestDo obj);
     }
 }
