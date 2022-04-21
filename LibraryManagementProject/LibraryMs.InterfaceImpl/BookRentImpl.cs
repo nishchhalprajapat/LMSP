@@ -12,7 +12,6 @@ namespace LibraryManagementProject.LibraryMs.InterfaceImpl
     {
         public List<BookResponseDo> createBookRentDetails(BookRentRequestDo obj)
         {
-            throw new NotImplementedException();
         }
     }
 }
