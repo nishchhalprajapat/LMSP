@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryManagementProject"
         mc:Ignorable="d"
-        Title="HomePage" Height="450" Width="800">
+        Title="HomePage" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
 
         <Grid.RowDefinitions>
@@ -20,7 +21,7 @@
                 <ColumnDefinition Width="27*"/>
                 <ColumnDefinition Width="10*"/>
             </Grid.ColumnDefinitions>
-            <Label Content="BookLibrary" HorizontalAlignment="Left" Margin="23,5,10,0" Foreground="#FF579FA8" FontSize="36" FontWeight="Bold" FontFamily="Mistral" FontStyle="Italic" BorderBrush="#FF579FA8" VerticalAlignment="Top" RenderTransformOrigin="1.31,1.13"/>
+            <Label Content="BookLibrary" HorizontalAlignment="Left" Margin="10,-5,0,0" Foreground="#FF579FA8" FontSize="48" FontWeight="Bold" FontFamily="Mistral" FontStyle="Italic" BorderBrush="#FF579FA8" VerticalAlignment="Top" RenderTransformOrigin="1.31,1.13" Width="347"/>
             <Label Grid.Column="3" Content="Nishchhal  >" HorizontalAlignment="Right" Margin="0,15,10,0" VerticalAlignment="Top" Foreground="#FF656363" FontWeight="Normal" FontStyle="Normal" FontSize="18" FontFamily="Arial Rounded MT Bold" Height="31" Width="118"/>
             <TextBox Padding="5"  Grid.Column="2" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Search Hare" VerticalAlignment="Top"  Height="31" Margin="0,15,0,0" Foreground="#FFCCCCCC" BorderBrush="#FFCCCCCC">
                 <TextBox.Background>
@@ -48,7 +49,7 @@
                 <CheckBox Content="Fiction Books" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Row="1"/>
                 <CheckBox Content="Non Fiction Books" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top"/>
                 <CheckBox Content="Historical Books" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" />
-                <Button Click="My_Rent_Btn" Content="My Rent" Margin="5,0,5,0" Grid.Row="5"  Background="#FF39999C" Foreground="#FFFEF7F7" FontFamily="Arial Rounded MT Bold" FontSize="18" FontWeight="Bold" >
+                <Button Click="go_to_MyRentprofile_page" Content="My Rent" Margin="5,0,5,0" Grid.Row="5"  Background="#FF39999C" Foreground="#FFFEF7F7" FontFamily="Arial Rounded MT Bold" FontSize="18" FontWeight="Bold" >
                     <Button.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform ScaleY="1"/>
@@ -251,8 +252,8 @@
                 </Grid>
             </Grid>
         </Grid>
-        <Button Content="Prev" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" Width="100" Height="28" VerticalAlignment="Center" Background="OrangeRed" Foreground="#FFFCFBFB" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
-        <Button Content="Next" HorizontalAlignment="Center" Margin="230,0,0,0" Grid.Row="2" Width="100" Height="28" VerticalAlignment="Center" Background="#FF39999C" Foreground="#FFFCF9F9" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <Button Click="go_to_signin_page" Content="Prev" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" Width="100" Height="28" VerticalAlignment="Center" Background="OrangeRed" Foreground="#FFFCFBFB" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <Button Click="go_to_rent_page" Content="Next" HorizontalAlignment="Center" Margin="230,0,0,0" Grid.Row="2" Width="100" Height="28" VerticalAlignment="Center" Background="#FF39999C" Foreground="#FFFCF9F9" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
 
     </Grid>
 </Window>

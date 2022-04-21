@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Nishchhal Prajapat\Source\Repos\LibraryManagementSystem\LibraryManagementProject\obj\Debug\net6.0-windows\
+C:\Users\Bhawna Rathor\source\repos\LibraryManagementProject\LibraryManagementProject\obj\Debug\net6.0-windows\
 LibraryManagementProject
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\Nishchhal Prajapat\Source\Repos\LibraryManagementSystem\LibraryManagementProject\App.xaml
-5-1988299398
+C:\Users\Bhawna Rathor\source\repos\LibraryManagementProject\LibraryManagementProject\App.xaml
+6-1685457056
 
-26-1486504154
+2753023546
 1941645785384
-BookRentPage.xaml;HomePage.xaml;Login.xaml;RentPage.xaml;SignUp.xaml;
+BookRentPage.xaml;HomePage.xaml;Login.xaml;PracticeLogin.xaml;RentPage.xaml;SignUp.xaml;
 
-False
+True
 

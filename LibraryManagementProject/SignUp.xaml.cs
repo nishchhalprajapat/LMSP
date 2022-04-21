@@ -23,7 +23,12 @@ namespace LibraryManagementProject
         {
             InitializeComponent();
         }
-
+        private void go_to_book_Detail_page(object sender, RoutedEventArgs e) 
+        {
+            HomePage homePage = new HomePage();
+            homePage.Show();
+            this.Close();
+        }
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 

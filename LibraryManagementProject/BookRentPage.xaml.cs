@@ -23,5 +23,17 @@ namespace LibraryManagementProject
         {
             InitializeComponent();
         }
+        private void go_to_rent_page(object sender, RoutedEventArgs e)
+        {
+            RentPage rentPage = new RentPage();
+            rentPage.Show();
+            this.Close();
+        }
+        private void go_to_profile_page(object sender, RoutedEventArgs e)
+        {
+            HomePage homePage = new HomePage(); 
+            homePage.Show();
+            this.Close();
+        }
     }
 }
