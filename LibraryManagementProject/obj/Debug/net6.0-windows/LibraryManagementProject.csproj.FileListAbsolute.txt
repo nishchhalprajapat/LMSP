@@ -25,3 +25,5 @@ C:\Users\Bhawna Rathor\source\repos\LibraryManagementProject\LibraryManagementPr
 C:\Users\Bhawna Rathor\source\repos\LibraryManagementProject\LibraryManagementProject\obj\Debug\net6.0-windows\SignUp.baml
 C:\Users\Bhawna Rathor\source\repos\LibraryManagementProject\LibraryManagementProject\obj\Debug\net6.0-windows\BookRentPage.g.cs
 C:\Users\Bhawna Rathor\source\repos\LibraryManagementProject\LibraryManagementProject\obj\Debug\net6.0-windows\BookRentPage.baml
+C:\Users\Bhawna Rathor\source\repos\LibraryManagementProject\LibraryManagementProject\obj\Debug\net6.0-windows\PracticeLogin.g.cs
+C:\Users\Bhawna Rathor\source\repos\LibraryManagementProject\LibraryManagementProject\obj\Debug\net6.0-windows\PracticeLogin.baml

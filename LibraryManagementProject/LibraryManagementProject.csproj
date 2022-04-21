@@ -8,11 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="BookImage-removebg-preview.png" />
     <None Remove="BookImage.png" />
     <None Remove="bookpunchline.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="BookImage-removebg-preview.png" />
     <Resource Include="BookImage.png" />
     <Resource Include="bookpunchline.jpg" />
   </ItemGroup>
