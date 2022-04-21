@@ -14,7 +14,6 @@ namespace LibraryManagementProject.LibraryMS.Entities
         public DateTime IssuedDate { get; set; }
         public DateTime ReturnDate { get; set; }
         public int ISBNNumber { get; set; }
-        public string Status { get; set; }
         public string BookType { get; set; }
 
         public BookResponseDo(int bookId,string bookName,string authorName,System.DateTime issuedDate,System.DateTime returnDate,int isbnNumber,string status,string bookType) {
@@ -24,7 +23,6 @@ namespace LibraryManagementProject.LibraryMS.Entities
             IssuedDate = issuedDate;
             ReturnDate = returnDate;
             ISBNNumber = isbnNumber;
-            Status = status;
             BookType = bookType;
         }
 

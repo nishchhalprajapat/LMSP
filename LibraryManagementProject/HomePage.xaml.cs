@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LibraryManagementProject.LibraryMs.InterfaceImpl;
+using LibraryManagementProject.LibraryMS.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,6 +47,14 @@ namespace LibraryManagementProject
         {
             RentPage bookRentPage = new RentPage();
             bookRentPage.ShowDialog();
+        }
+        private void Search_Btn(object sender, RoutedEventArgs e)
+        {
+            string searchText=SearchBar.Text;
+            searchText = searchText.Trim();
+            searchText = searchText.ToLower();
+            CommonFeatureImpl  commonFeatureImpl = new CommonFeatureImpl();
+            BookResponseDo bookDetails=commonFeatureImpl.searchBar(searchText);
         }
     }
 }
