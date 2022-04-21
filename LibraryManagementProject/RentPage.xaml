@@ -41,13 +41,13 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <Label Content="Book Name" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF656363" FontFamily="Arial Rounded MT Bold" FontSize="18" Grid.Column="1"/>
-                        <TextBox Padding="5" HorizontalAlignment="Stretch" Grid.Row="1" TextWrapping="Wrap" Text="Type Book Name" VerticalAlignment="Center"  Foreground="#FFCCCCCC" BorderBrush="#FFCCCCCC" Grid.Column="1" />
+                        <TextBox Name="RentBookName" Padding="5" HorizontalAlignment="Stretch" Grid.Row="1" TextWrapping="Wrap" Text="Type Book Name" VerticalAlignment="Center"  Foreground="#FFCCCCCC" BorderBrush="#FFCCCCCC" Grid.Column="1" />
                         <Label Content="Issued Date" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FF656363" FontFamily="Arial Rounded MT Bold" FontSize="18" Grid.Column="1"/>
-                        <TextBox Padding="5" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Type Issued Date" VerticalAlignment="Center" Foreground="#FFCCCCCC" BorderBrush="#FFCCCCCC" Grid.Column="1"/>
+                        <TextBox Name="Rent_Issued_Date" Padding="5" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Type Issued Date" VerticalAlignment="Center" Foreground="#FFCCCCCC" BorderBrush="#FFCCCCCC" Grid.Column="1"/>
                         <Label Content="Return Date" Grid.Row="4" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="#FF656363" FontFamily="Arial Rounded MT Bold" FontSize="18" Grid.Column="1"/>
-                        <TextBox Padding="5" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Type Book Return Date" VerticalAlignment="Center"  Foreground="#FFCCCCCC" BorderBrush="#FFCCCCCC" Grid.Column="1"/>
+                        <TextBox Name="Rent_Return_Date" Padding="5" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Type Book Return Date" VerticalAlignment="Center"  Foreground="#FFCCCCCC" BorderBrush="#FFCCCCCC" Grid.Column="1"/>
 
-                        <Button Content="Button" Grid.Row="6" HorizontalAlignment="Right" Margin="0,10,0,0" Width="100" Height="28" Background="#FF39999C" Foreground="#FFFBF3F3" FontFamily="Arial Rounded MT Bold" FontSize="18" FontWeight="Bold" Grid.Column="1"/>
+                        <Button Click="Rent_Book" Content="Button" Grid.Row="6" HorizontalAlignment="Right" Margin="0,10,0,0" Width="100" Height="28" Background="#FF39999C" Foreground="#FFFBF3F3" FontFamily="Arial Rounded MT Bold" FontSize="18" FontWeight="Bold" Grid.Column="1"/>
                     </Grid>
                 </StackPanel>
                 <Label Content="Rent Book" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="18" Foreground="#FF656363"/>

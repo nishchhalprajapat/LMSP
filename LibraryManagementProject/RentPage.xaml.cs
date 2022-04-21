@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LibraryManagementProject.LibraryMs.InterfaceImpl;
+using LibraryManagementProject.LibraryMS.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,18 @@ namespace LibraryManagementProject
         public RentPage()
         {
             InitializeComponent();
+        }
+
+        public object BookRentRequestDo { get; private set; }
+
+        private void Rent_Book(object sender, RoutedEventArgs e)
+        {
+            BookRentRequestDo bookRentDetails = new BookRentRequestDo();
+            bookRentDetails.BookName = RentBookName.Text;
+            bookRentDetails.IssueDate = RentIssuedDate.Text;
+            bookRentDetails.ReturnDate = RentReturnDate.Text;
+            BookRentImpl bookRentImpl = new BookRentImpl(); 
+            bookRentImpl.createBookRentDetails(bookRentDetails);
         }
     }
 }
