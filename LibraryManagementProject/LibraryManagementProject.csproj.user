@@ -16,7 +16,11 @@
     <Compile Update="Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
+    <Compile Update="PracticeLogin.xaml.cs">
+=======
     <Compile Update="RentPage.xaml.cs">
+>>>>>>> 634c5b3d8f800ec37a7f32fb1689152ba18b13c4
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="SignUp.xaml.cs">
@@ -34,6 +38,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="RentPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PracticeLogin.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SignUp.xaml">

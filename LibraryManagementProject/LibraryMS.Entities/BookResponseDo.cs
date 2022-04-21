@@ -17,7 +17,7 @@ namespace LibraryManagementProject.LibraryMS.Entities
         public string Status { get; set; }
         public string BookType { get; set; }
 
-        public BookResponseDo(int bookId,string bookName,string authorName,DateTime issuedDate,DateTime returnDate,int isbnNumber,string status,string bookType) {
+        public BookResponseDo(int bookId,string bookName,string authorName,System.DateTime issuedDate,System.DateTime returnDate,int isbnNumber,string status,string bookType) {
             BookId = bookId;
             BookName = bookName;
             AuthorName = authorName;

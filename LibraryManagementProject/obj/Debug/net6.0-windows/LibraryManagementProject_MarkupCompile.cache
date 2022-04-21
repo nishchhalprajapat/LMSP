@@ -9,12 +9,21 @@ LibraryManagementProject
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+<<<<<<< HEAD
+C:\Users\Bhawna Rathor\source\repos\LibraryManagementProject\LibraryManagementProject\App.xaml
+5-2011534786
+
+261892754615
+1941645785384
+BookRentPage.xaml;Login.xaml;MainWindow.xaml;PracticeLogin.xaml;SignUp.xaml;
+=======
 C:\Users\Nishchhal Prajapat\Source\Repos\LibraryManagementSystem\LibraryManagementProject\App.xaml
 5-1988299398
 
 26-1486504154
 1941645785384
 BookRentPage.xaml;HomePage.xaml;Login.xaml;RentPage.xaml;SignUp.xaml;
+>>>>>>> 634c5b3d8f800ec37a7f32fb1689152ba18b13c4
 
 False
 
