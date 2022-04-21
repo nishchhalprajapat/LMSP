@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryManagementProject"
         mc:Ignorable="d"
-        Title="SignUpPage" Height="600" Width="800">
+        Title="SignUpPage" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
+       
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -50,7 +52,7 @@
                 </TextBox>
                 <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="PassWord" VerticalAlignment="Center" FontWeight="Bold" FontSize="22" Width="324" Height="38"/>
                 <TextBox HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Center" Width="324" FontSize="22" Height="38"/>
-                <Button Content="Create Account" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="53,18,0,84" Grid.Row="7" FontSize="22" FontWeight="Bold" Width="231" Background="OrangeRed" MinHeight="60" MaxHeight="70"/>
+                <Button Click="go_to_book_Detail_page" Content="Create Account" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="53,18,0,84" Grid.Row="7" FontSize="22" FontWeight="Bold" Width="231" Background="OrangeRed" MinHeight="60" MaxHeight="70" Foreground="#FFFEF7F7"/>
                 <Grid Grid.RowSpan="8"></Grid>
             </Grid>
         </Grid>

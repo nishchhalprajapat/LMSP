@@ -23,10 +23,23 @@ namespace LibraryManagementProject
         {
             InitializeComponent();
         }
-        private void My_Rent_Btn(object sender, RoutedEventArgs e)
+        private void go_to_MyRentprofile_page(object sender, RoutedEventArgs e)
         {
             BookRentPage bookRentPage = new BookRentPage();
             bookRentPage.Show();
+            this.Close();
+        }
+        private void go_to_rent_page(object sender, RoutedEventArgs e)
+        {
+            RentPage rentPage = new RentPage();
+            rentPage.Show();
+            this.Close();
+        }
+        private void go_to_signin_page(object sender, RoutedEventArgs e)
+        {
+            Login login=new Login();
+            login.Show();
+            this.Close();
         }
         private void Rent_Book_Btn(object sender, RoutedEventArgs e)
         {
