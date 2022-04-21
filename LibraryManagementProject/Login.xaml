@@ -42,15 +42,9 @@
                 </TextBox>
                 <TextBlock HorizontalAlignment="Left"  Grid.Row="3" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" FontSize="22" FontWeight="Bold" Width="338" Height="38" Grid.ColumnSpan="2"/>
                 <TextBox HorizontalAlignment="Left"  Margin="0,2,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Height="38" TextChanged="TextBox_TextChanged" Grid.ColumnSpan="2"/>
-
-                <Button >
-                    Click="go_to_home_page" Content="SIGN IN" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="5" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Width="314" Height="38" Background="OrangeRed"  Grid.ColumnSpan="2" Foreground="#FFFEF7F7"
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="8"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
+                
+                <Button 
+                    Click="go_to_home_page" Content="SIGN IN" HorizontalAlignment="Left" Margin="6,10,0,0" Grid.Row="5" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Width="314" Height="38" Background="OrangeRed"  Grid.ColumnSpan="2" Foreground="#FFFEF7F7"/>
                 <Button Click="go_to_singUp_Page" Content="Don't have an account create?" Background="#FF52ADA4" HorizontalAlignment="Left"  Margin="6,6,0,0" Grid.Row="6" VerticalAlignment="Top" FontSize="22" Height="38" Width="314" Grid.ColumnSpan="2" Foreground="#FFFEF7F7" />
             </Grid>
             <Image HorizontalAlignment="Left" Height="100" Margin="152,244,0,0" VerticalAlignment="Top" Width="100"/>

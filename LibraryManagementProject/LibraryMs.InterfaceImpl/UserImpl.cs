@@ -13,9 +13,7 @@ namespace LibraryManagementProject.LibraryMs.InterfaceImpl
         public UserResponseDo signInUser(LoginRequestDo obj)
         {
             UserResponseDo usrRespObj=new UserResponseDo();
-            usrRespObj.UserId = 1;
-            usrRespObj.UserName = "ram";
-            usrRespObj.UserEmail = "ram1234@gmail.com";
+            
             return usrRespObj;
         }
 
