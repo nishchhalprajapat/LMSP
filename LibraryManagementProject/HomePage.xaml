@@ -1,0 +1,258 @@
+﻿<Window x:Class="LibraryManagementProject.HomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagementProject"
+        mc:Ignorable="d"
+        Title="HomePage" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="0.8*"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="0,4,0,0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="13*"/>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition Width="27*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="BookLibrary" HorizontalAlignment="Left" Margin="23,5,10,0" Foreground="#FF579FA8" FontSize="36" FontWeight="Bold" FontFamily="Mistral" FontStyle="Italic" BorderBrush="#FF579FA8" VerticalAlignment="Top" RenderTransformOrigin="1.31,1.13"/>
+            <Label Grid.Column="3" Content="Nishchhal  >" HorizontalAlignment="Right" Margin="0,15,10,0" VerticalAlignment="Top" Foreground="#FF656363" FontWeight="Normal" FontStyle="Normal" FontSize="18" FontFamily="Arial Rounded MT Bold" Height="31" Width="118"/>
+            <TextBox Padding="5"  Grid.Column="2" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Search Hare" VerticalAlignment="Top"  Height="31" Margin="0,15,0,0" Foreground="#FFCCCCCC" BorderBrush="#FFCCCCCC">
+                <TextBox.Background>
+                    <ImageBrush/>
+                </TextBox.Background>
+            </TextBox>
+            <Line Stretch="Fill" Stroke="#ccc" X2="1" Grid.ColumnSpan="4" Margin="0,47,0,0"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+                <Label Content="Filter Books" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF5F5E5E" FontWeight="Bold" FontSize="20" FontFamily="Arial Rounded MT Bold"/>
+                <CheckBox Content="Fiction Books" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+                <CheckBox Content="Non Fiction Books" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+                <CheckBox Content="Historical Books" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" />
+                <Button Click="My_Rent_Btn" Content="My Rent" Margin="5,0,5,0" Grid.Row="5"  Background="#FF39999C" Foreground="#FFFEF7F7" FontFamily="Arial Rounded MT Bold" FontSize="18" FontWeight="Bold" >
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                </Button>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid HorizontalAlignment="Left" Margin="333,0,0,47" Grid.RowSpan="3" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                <Rectangle Grid.Column="0" Grid.Row="0"  Margin="0,0,0,0" Stroke="#ccc" />
+                <Rectangle Grid.Column="0" Grid.Row="1"  Margin="0,0,0,0" Stroke="#ccc" />
+                <Rectangle Grid.Column="0" Grid.Row="2"  Margin="0,0,0,0" Stroke="#ccc"  />
+                <Rectangle Grid.Column="0" Grid.Row="3"  Margin="0,0,0,0" Stroke="#ccc"  />
+                <Rectangle Grid.Column="0" Grid.Row="4"  Margin="0,0,0,0" Stroke="#ccc"  />
+                <Rectangle Grid.Column="0" Grid.Row="5"  Margin="0,0,0,0" Stroke="#ccc" />
+                <Rectangle Grid.Column="0" Grid.Row="6" Stroke="#ccc" />
+                <Rectangle Grid.Column="1" Grid.Row="0"  Margin="0,0,0,0" Stroke="#ccc"   />
+                <Rectangle Grid.Column="1" Grid.Row="1"   Margin="0,0,0,0" Stroke="#ccc"  />
+                <Rectangle Grid.Row="2" Grid.Column="1"  Margin="0,0,0,0" Stroke="#ccc"  />
+                <Rectangle Grid.Row="3" Grid.Column="1"  Margin="0,0,0,0" Stroke="#ccc"   />
+                <Rectangle Grid.Row="4" Grid.Column="1"  Margin="0,0,0,0" Stroke="#ccc"  />
+                <Rectangle Grid.Row="5" Grid.Column="1"  Margin="0,0,0,0" Stroke="#ccc"  />
+                <Rectangle Grid.Row="6" Grid.Column="1"  Margin="0,0,0,0" Stroke="#ccc"  />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="4*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Click="Rent_Book_Btn" Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+                    <Image  HorizontalAlignment="Stretch"  Margin="0,0,0,0" VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+
+                </Grid>
+                <Grid Grid.Row="6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+
+                </Grid>
+                <Grid Grid.Row="2" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+
+                </Grid>
+                <Grid Grid.Row="3" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+
+                </Grid>
+                <Grid Grid.Row="4" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+
+                </Grid>
+                <Grid Grid.Row="5" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+
+                </Grid>
+                <Grid Grid.Row="6" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Source="/theKiller.png"/>
+                    <Label Grid.Column="1" Content="To Kill a Mockingbird" HorizontalAlignment="Left" Margin="0,0,0,13" VerticalAlignment="Center"/>
+                    <Label Grid.Column="1" Content="Harper Lee" HorizontalAlignment="Left" Margin="0,13,0,0" VerticalAlignment="Center"/>
+                    <Button Grid.Column="1" Content="Rent" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" Height="28" Background="#FF39999C" Foreground="#FFF4F2F2" FontFamily="Arial Rounded MT Bold"/>
+
+                </Grid>
+            </Grid>
+        </Grid>
+        <Button Content="Prev" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" Width="100" Height="28" VerticalAlignment="Center" Background="OrangeRed" Foreground="#FFFCFBFB" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <Button Content="Next" HorizontalAlignment="Center" Margin="230,0,0,0" Grid.Row="2" Width="100" Height="28" VerticalAlignment="Center" Background="#FF39999C" Foreground="#FFFCF9F9" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

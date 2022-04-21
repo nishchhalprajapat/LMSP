@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Bhawna Rathor\source\repos\LibraryManagementProject\LibraryManagementProject\App.xaml
-5-2011534786
+6-1685457056
 
-28-484955679
+291970280548
 1941645785384
-BookRentPage.xaml;Login.xaml;MainWindow.xaml;PracticeLogin.xaml;SignUp.xaml;
+BookRentPage.xaml;HomePage.xaml;Login.xaml;PracticeLogin.xaml;RentPage.xaml;SignUp.xaml;
 
 True
 
