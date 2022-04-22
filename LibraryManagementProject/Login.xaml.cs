@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LibraryManagementProject.LibraryMs.InterfaceImpl;
+using LibraryManagementProject.LibraryMS.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +26,15 @@ namespace LibraryManagementProject
             InitializeComponent();
         }
 
-       
+        private void Login_page(object sender, RoutedEventArgs e)
+        {
+            LoginRequestDo loginReqDoObj = new LoginRequestDo();
+            loginReqDoObj.UserName =UserName.Text;
+            loginReqDoObj.UserPassword =Password.Text;
+            UserImpl userImplObj=new UserImpl();
+            userImplObj.signInUser(loginReqDoObj);
+
+        }
         private void go_to_singUp_Page(object sender, RoutedEventArgs e)
         {
             SignUp signUp = new SignUp();

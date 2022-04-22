@@ -28,7 +28,7 @@ namespace LibraryManagementProject.LibraryMs.InterfaceImpl
                     bookobj.IssuedDate = Convert.ToDateTime(s[3]);
                     bookobj.ReturnDate = Convert.ToDateTime(s[4]);
                     bookobj.ISBNNumber = Convert.ToInt32(s[5]);
-                    bookobj.Status=Convert.ToString(s[6]);
+                   // bookobj.Status=Convert.ToString(s[6]);
                     bookobj.BookType = Convert.ToString(s[7]);
                     bookList.Add(bookobj);
                 }

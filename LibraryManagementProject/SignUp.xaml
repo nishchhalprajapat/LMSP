@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="SignUpPage" Height="600" Width="800"
         WindowStartupLocation="CenterScreen">
-       
+
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -26,7 +26,7 @@
                     <RowDefinition Height="133*"/>
                 </Grid.RowDefinitions>
                 <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="UserName" VerticalAlignment="Center" FontSize="22" FontWeight="Bold" Height="40" Width="320" Grid.Row="1"/>
-                <TextBox HorizontalAlignment="Left" Margin="12,3,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" FontSize="22" Height="40" Grid.Row="2" UseLayoutRounding="False" RenderTransformOrigin="0.5,0.5">
+                <TextBox Name="User_Name" HorizontalAlignment="Left" Margin="12,3,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" FontSize="22" Height="40" Grid.Row="2" UseLayoutRounding="False" RenderTransformOrigin="0.5,0.5">
                     <TextBox.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -40,7 +40,7 @@
                     </TextBox.Style>
                 </TextBox>
                 <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center" FontSize="22" FontWeight="Bold" Width="339" Height="38"/>
-                <TextBox HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" Width="324" FontSize="22" Height="36" TextChanged="TextBox_TextChanged" SelectionTextBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Background="{x:Null}">
+                <TextBox Name="Email_id" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" Width="324" FontSize="22" Height="36" TextChanged="TextBox_TextChanged" SelectionTextBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Background="{x:Null}">
                     <TextBox.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -51,7 +51,7 @@
                     </TextBox.RenderTransform>
                 </TextBox>
                 <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="PassWord" VerticalAlignment="Center" FontWeight="Bold" FontSize="22" Width="324" Height="38"/>
-                <TextBox HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Center" Width="324" FontSize="22" Height="38"/>
+                <TextBox Name="Pass_Word" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Center" Width="324" FontSize="22" Height="38"/>
                 <Button Click="go_to_book_Detail_page" Content="Create Account" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="53,18,0,84" Grid.Row="7" FontSize="22" FontWeight="Bold" Width="231" Background="OrangeRed" MinHeight="60" MaxHeight="70" Foreground="#FFFEF7F7"/>
                 <Grid Grid.RowSpan="8"></Grid>
             </Grid>

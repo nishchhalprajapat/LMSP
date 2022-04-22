@@ -50,7 +50,9 @@ namespace LibraryManagementProject.LibraryMs.InterfaceImpl
         public Boolean signUpUser(UserRequestDo obj)
         {
             string path = @"C:\Users\Bhawna Rathor\Desktop\UserData.csv";
-            string addline = obj.UserId + "," + obj.UserName + "," + obj.UserEmail + "," + obj.UserPassWord;
+            List<UserRequestDo> list=getUserList();
+            int id = list.Count + 1;
+            string addline = obj.UserId+ "," + obj.UserName + "," + obj.UserEmail + "," + obj.UserPassWord;
             File.AppendAllText(path, addline);
             return true;
         }

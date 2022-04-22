@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LibraryManagementProject.LibraryMs.InterfaceImpl;
+using LibraryManagementProject.LibraryMS.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +30,16 @@ namespace LibraryManagementProject
             HomePage homePage = new HomePage();
             homePage.Show();
             this.Close();
+        }
+        private void sign_up(object sender, RoutedEventArgs e)
+        {
+            UserRequestDo userReqDoObj=new UserRequestDo();
+            userReqDoObj.UserName = User_Name.Text;
+            userReqDoObj.UserEmail=Email_id.Text;
+            userReqDoObj.UserPassWord=Pass_Word.Text;
+            UserImpl userImpObj=new UserImpl();
+            userImpObj.signUpUser(userReqDoObj);
+
         }
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {

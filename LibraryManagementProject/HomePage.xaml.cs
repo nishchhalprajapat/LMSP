@@ -48,7 +48,7 @@ namespace LibraryManagementProject
             RentPage bookRentPage = new RentPage();
             bookRentPage.ShowDialog();
         }
-        private void Search_Btn(object sender, RoutedEventArgs e)
+        private void SearchBox(object sender, RoutedEventArgs e)
         {
             string searchText=SearchBar.Text;
             searchText = searchText.Trim();
