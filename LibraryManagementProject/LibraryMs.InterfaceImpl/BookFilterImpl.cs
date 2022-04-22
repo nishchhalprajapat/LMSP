@@ -23,15 +23,16 @@ namespace LibraryManagementProject.LibraryMs.InterfaceImpl
         }
         private List<BookResponseDo> filterHelper(string filterType)
         {
-            //List<BookResponseDo> bookDetails = getBooks();
+            BookImpl bookImpl = new BookImpl(); 
+            List<BookResponseDo> bookDetails = bookImpl.getbookDetails();
             List<BookResponseDo> filterBooks = new List<BookResponseDo>();
-            //foreach (var book in bookDetails)
-            //{
-            //    if (book.BookType == filterType)
-            //    {
-            //        filterBooks.Add(book);
-            //    }
-            //}
+            foreach (var book in bookDetails)
+            {
+                if (book.BookType == filterType)
+                {
+                    filterBooks.Add(book);
+                }
+            }
             return filterBooks;
         }
     }
