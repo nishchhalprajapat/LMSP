@@ -12,5 +12,6 @@ namespace LibraryManagementProject.LibraryMS.Entities
         public string BookName{ get; set; }    
         public string IssueDate { get; set; }
 		public string ReturnDate { get; set; }
+        public string Status { get; set; }
     }
 }

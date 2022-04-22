@@ -14,13 +14,13 @@ namespace LibraryManagementProject.LibraryMs.InterfaceImpl
         public List<List<BookResponseDo>> bookFilter(List<string> filterType)
         {
             List<List<BookResponseDo>> bookResponseList = new List<List<BookResponseDo>>();  
-            foreach (var book in filterType)
+            /*foreach (var book in filterType)
             {
                 bookResponseList.Add(filterHelper(book));
-            }
+            }*/
             return bookResponseList;
         }
-        private List<BookResponseDo> filterHelper(string filterType)
+        /*private List<BookResponseDo> filterHelper(string filterType)
         {
             List<BookResponseDo> bookDetails = getBooks();
             List<BookResponseDo> filterBooks = new List<BookResponseDo>();
@@ -32,6 +32,6 @@ namespace LibraryManagementProject.LibraryMs.InterfaceImpl
                 }
             }
             return filterBooks;
-        }
+        }*/
     }
 }

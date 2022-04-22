@@ -26,16 +26,19 @@ namespace LibraryManagementProject
             InitializeComponent();
         }
 
-        public object BookRentRequestDo { get; private set; }
-
-        private void Rent_Book(object sender, RoutedEventArgs e)
+        
+        public void Rent_Book(object sender, RoutedEventArgs e)
         {
             BookRentRequestDo bookRentDetails = new BookRentRequestDo();
             bookRentDetails.BookName = RentBookName.Text;
             bookRentDetails.IssueDate = RentIssuedDate.Text;
             bookRentDetails.ReturnDate = RentReturnDate.Text;
+            bookRentDetails.Status = "Not Return";
+            MessageBox.Show("new");
             BookRentImpl bookRentImpl = new BookRentImpl(); 
-            bookRentImpl.createBookRentDetails(bookRentDetails);
+           bool result= bookRentImpl.createBookRentDetails(bookRentDetails);
+            BrandName.Content = result;
+            MessageBox.Show("new");
         }
     }
 }

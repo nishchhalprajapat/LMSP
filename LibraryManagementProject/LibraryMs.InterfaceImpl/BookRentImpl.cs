@@ -13,9 +13,15 @@ namespace LibraryManagementProject.LibraryMs.InterfaceImpl
     {
         public bool createBookRentDetails(BookRentRequestDo bookRentRequestDo)
         {
-            string fileName = @"Files\BookRent.csv";
-            string bookRentDetails = bookRentRequestDo.userId + "," + bookRentRequestDo.BookName + "," + bookRentRequestDo.IssueDate + "," + bookRentRequestDo.ReturnDate;
-            File.AppendAllText(fileName, bookRentDetails);
+            Console.WriteLine(bookRentRequestDo.BookName);
+            string fileName = @"Files\ProductSale.csv";
+            string bookRentDetails = 2 + "," + bookRentRequestDo.BookName + "," + bookRentRequestDo.IssueDate + "," + bookRentRequestDo.ReturnDate+","+ bookRentRequestDo.Status;
+            //File.AppendAllText(fileName, bookRentDetails);
+            using (StreamWriter sw = File.AppendText(fileName))
+            {
+                sw.WriteLine(bookRentDetails);
+            }
+
             return true;
         }
     }
