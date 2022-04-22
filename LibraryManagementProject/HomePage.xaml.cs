@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LibraryManagementProject.LibraryMs.InterfaceImpl;
+using LibraryManagementProject.LibraryMS.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -44,7 +46,27 @@ namespace LibraryManagementProject
         private void Rent_Book_Btn(object sender, RoutedEventArgs e)
         {
             RentPage bookRentPage = new RentPage();
-            bookRentPage.ShowDialog();
+            bookRentPage.Show();
+        }
+        private void Filter_Btn(object sender, RoutedEventArgs e)
+        {
+            List<string> filters = new List<string>();
+            if (FictionBooks.IsChecked==true)
+            {
+                filters.Add(FictionBooks.Name);
+            }
+            if (NonFictionBooks.IsChecked == false)
+            {
+                filters.Add(NonFictionBooks.Name);
+            }
+        }
+        private void Search_Btn(object sender, RoutedEventArgs e)
+        {
+            string searchText=SearchBar.Text;
+            searchText = searchText.Trim();
+            searchText = searchText.ToLower();
+            CommonFeatureImpl  commonFeatureImpl = new CommonFeatureImpl();
+            BookResponseDo bookDetails=commonFeatureImpl.searchBar(searchText);
         }
     }
 }

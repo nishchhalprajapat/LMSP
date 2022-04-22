@@ -10,8 +10,8 @@ namespace LibraryManagementProject.LibraryMS.Entities
     {
         public int userId { get; set; }
         public string BookName{ get; set; }    
-        public DateTime IssueDate { get; set; }
-		public DateTime ReturnDate { get; set; }
-
+        public string IssueDate { get; set; }
+		public string ReturnDate { get; set; }
+        public string Status { get; set; }
     }
 }

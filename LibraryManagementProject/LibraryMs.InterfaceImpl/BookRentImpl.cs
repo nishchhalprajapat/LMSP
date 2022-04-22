@@ -2,6 +2,7 @@
 using LibraryManagementProject.LibraryMS.Entities;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,9 +11,18 @@ namespace LibraryManagementProject.LibraryMs.InterfaceImpl
 {
     public class BookRentImpl : IBookRentInterface
     {
-        public List<BookResponseDo> createBookRentDetails(BookRentRequestDo obj)
+        public bool createBookRentDetails(BookRentRequestDo bookRentRequestDo)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(bookRentRequestDo.BookName);
+            string fileName = @"Files\ProductSale.csv";
+            string bookRentDetails = 2 + "," + bookRentRequestDo.BookName + "," + bookRentRequestDo.IssueDate + "," + bookRentRequestDo.ReturnDate+","+ bookRentRequestDo.Status;
+            //File.AppendAllText(fileName, bookRentDetails);
+            using (StreamWriter sw = File.AppendText(fileName))
+            {
+                sw.WriteLine(bookRentDetails);
+            }
+
+            return true;
         }
     }
 }
